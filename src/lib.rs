@@ -27,8 +27,8 @@ impl<T: Bundle> Prefab for T {
 // Parent section
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash, Default)]
 pub struct ParentNode<B: Bundle, C: Children> {
-    parent: B,
-    children: C,
+    pub parent: B,
+    pub children: C,
 }
 
 impl<B: Bundle, C: Children> Prefab for ParentNode<B, C> {
@@ -51,8 +51,8 @@ pub trait Children: Sized {
 /// It is in this order because adding a sibling has to wrap the previous children.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash, Default)]
 pub struct SiblingsNode<C: Children, P: Prefab> {
-    seniors: C,
-    youngest: P,
+    pub seniors: C,
+    pub youngest: P,
 }
 
 impl<T: Prefab> Children for T {
