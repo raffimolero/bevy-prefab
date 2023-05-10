@@ -40,4 +40,4 @@ how is this useful, you may ask
 
 sugar
 
-as for other capabilities like making runtime custonmizable factories that spawn runtime prefabs (at runtime) i'll have to think about it
+as for other capabilities like making runtime customizable factories that spawn runtime prefabs (at runtime) i'll have to think about it
